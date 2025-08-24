@@ -30,7 +30,7 @@ body {
 }
 
 .container {
-    width: min(96% ,1120px);
+    width: min(96%, 1120px);
     margin: 0 auto;
     padding: 0 16px;
 }
@@ -65,6 +65,8 @@ img {
     border-radius: 10px;
     font-weight: 600;
     text-decoration: none;
+
+
 }
 
 .botaoPrimario {
@@ -93,7 +95,8 @@ img {
         align-items: center;
         justify-content: space-between;
         padding: 20px 0;
-        @media(max-width: 730px){
+
+        @media(max-width: 730px) {
             flex-direction: column;
         }
     }
@@ -106,7 +109,8 @@ img {
         display: flex;
         gap: 16px;
         align-items: center;
-        @media(max-width: 540px){
+
+        @media(max-width: 540px) {
             gap: 12px;
             font-size: 14px;
         }
@@ -147,7 +151,8 @@ img {
         justify-content: space-between;
         gap: 40px;
         padding: 56px 0;
-        @media(max-width: 840px){
+
+        @media(max-width: 840px) {
             flex-direction: column;
             text-align: center;
 
@@ -165,11 +170,12 @@ img {
             line-height: 1.1;
             margin: 0;
             color: var(--azulEscuro);
-            @media(max-width:520px){
+
+            @media(max-width:520px) {
                 font-size: 36px;
             }
-            
-           
+
+
         }
 
         .heroSubtitulo {
@@ -179,7 +185,8 @@ img {
 
     .heroImagem img {
         width: 520px;
-        @media(max-width: 640px){
+
+        @media(max-width: 640px) {
             width: 400px;
         }
 
@@ -196,11 +203,12 @@ img {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 20px;
-        @media(max-width:875px){
+
+        @media(max-width:875px) {
             grid-template-columns: 1fr 1fr;
         }
 
-        @media(max-width:650px){
+        @media(max-width:650px) {
             grid-template-columns: 1fr;
         }
 
@@ -258,7 +266,8 @@ img {
         display: flex;
         align-items: center;
         gap: 40px;
-        @media(max-width:1000px){
+
+        @media(max-width:1000px) {
             flex-direction: column;
             text-align: center;
             text-transform: justify;
@@ -277,11 +286,12 @@ img {
     .sobreImagem img {
         width: 500px;
         border-radius: 12px;
-        @media(max-width: 660px){
+
+        @media(max-width: 660px) {
             width: 400px;
         }
 
-        @media(max-width: 450px){
+        @media(max-width: 450px) {
             display: none;
         }
     }
@@ -310,7 +320,8 @@ img {
         border-radius: 14px;
         padding: 18px;
         transition: box-shadow .15s ease, transform .15s ease;
-        @media(max-width:650px){
+
+        @media(max-width:650px) {
             width: 100%;
         }
 
@@ -393,6 +404,15 @@ img {
         justify-content: space-between;
         gap: 40px;
 
+        @media (max-width:700px) {
+            flex-direction: column;
+        }
+
+
+        @media (max-width:500px) {
+            flex-direction: column;
+        }
+
 
     }
 
@@ -415,6 +435,9 @@ img {
             display: flex;
             gap: 12px;
             margin-top: 8px;
+
+            @media (max-width:700px) {}
+
         }
     }
 
@@ -430,12 +453,36 @@ img {
         padding: 8px;
         width: 560px;
 
+        @media (max-width:700px) {
+            width: 580px;
+        }
+
+        @media (max-width:500px) {
+            width: 415px;
+        }
+
+
+
+
+
 
         iframe {
             width: 100%;
             height: 320px;
             border: 0;
             border-radius: 8px;
+
+            @media (max-width:700px) {}
+
+
+            @media (max-width:500px) {
+                width: 100%;
+                height: 280px;
+
+            }
+
+
+
         }
     }
 }
@@ -456,6 +503,30 @@ img {
     .ctaFinalTitulo {
         font-size: 24px;
         margin: 0;
+
+        @media (max-width:700px) {
+            font-size: 18px;
+        }
+
+        @media (max-width:500px) {
+            font-size: 16px;
+            width: 400px;
+        }
+
+    }
+
+    a {
+        @media (max-width:700px) {
+            width: 220px;
+            margin-right: 3rem;
+        }
+
+        @media (max-width:500px) {
+            width: 360px;
+            margin-left: rem;
+            padding: 0.4rem;
+        }
+
     }
 }
 
@@ -471,9 +542,27 @@ img {
         gap: 20px;
         padding: 20px 0;
 
+        @media (max-width:700px) {
+            font-size: 0.9rem;
+            gap: 0px;
+        }
+
+        @media (max-width:500px) {
+            font-size: 0.8rem;
+            gap: 0px;
+        }
+
     }
 
     .rodapeEndereco {
         font-style: normal;
+
+        @media (max-width:700px) {
+            margin-right: 2rem;
+        }
+
+        @media (max-width:500px) {
+            margin-right: 2.6rem;
+        }
     }
 }
